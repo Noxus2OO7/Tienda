@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(255, 251, 144);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+
+main {
+    background-color: #f7f7f7;
+    width: 100%;
+    max-width: 650px;
+    height: 60%;
+    max-height: 600px;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px 0 rgba(210, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+section {
+    flex-grow: 1;
+}
+
+aside {
+    flex-direction: column;
+    display: flex;
+    border-left: solid 1px rgb(0, 0, 0);
+    height: 100%;
+    width: 40%;
+    padding: 1%;
+}
+
+
+.item{
+    background-color: rgba(255, 232, 103, 0.523);
+    height: 75%;
+    width: 100%;
+    padding: 5%;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
+#comprar {
+    background-color: rgb(189, 160, 31);
+    border: none;
+    padding: 5%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#comprar:hover {
+    background-color: rgb(186, 253, 71);
+}
