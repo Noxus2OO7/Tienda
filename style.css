@@ -53,3 +53,19 @@ aside {
 #comprar:hover {
     background-color: rgb(186, 253, 71);
 }
+
+.boton{
+    background-color: rgb(189, 160, 31);
+    border: none;
+    padding: 5%;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 10vh;
+    height:0vh;
+}
+
+.Div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
