@@ -4,6 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
 }
 
 main {
@@ -62,10 +63,13 @@ aside {
     transition: 0.3s;
     width: 10vh;
     height:0vh;
+    padding-top: 10px;
 }
 
 .Div{
     display: flex;
     flex-direction: column;
     padding-bottom: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
 }

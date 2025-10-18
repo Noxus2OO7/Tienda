@@ -23,6 +23,33 @@ const tienda = [
 
 let carrito = []
 
+const carritoContenedor = document.getElementById("carritocomprar")
+function actualizarCarrito(){
+carritoContenedor.innerHTML =  ""
+
+carrito.forEach((item) => {
+    const itemContenedor = document.createElement("div")
+    carritoContenedor.appendChild(itemContenedor)
+    const itemNombre = document.createElement("span")
+    itemContenedor.appendChild(itemNombre)
+    itemNombre.textContent ="("+item.cantidad +")" + item.nombre;
+    itemNombre.className = "Div"
+
+    
+    const itemPrecio = document.createElement("span")
+    itemContenedor.appendChild(itemPrecio)
+    itemPrecio.textContent = item.precio + "$"
+    
+    const itemBoton = document.createElement("button")
+    itemContenedor.appendChild(itemBoton)
+    itemBoton.className = "boton"
+    itemBoton.textContent = "Eliminar"
+   
+    
+    
+})
+}
+
 const tiendacontenedor = document.getElementById("shop");
 tienda.forEach((item) => {
     console.log("shop;", item);
@@ -44,6 +71,8 @@ tienda.forEach((item) => {
     itemBoton.className = "boton"
     itemBoton.textContent = "Agregar"
 
+    
+
 
     itemBoton.addEventListener("click", () => {
         const existe = carrito.find((elemento) => {
@@ -60,7 +89,7 @@ tienda.forEach((item) => {
                 cantidad: 1
             })
         }
-
+        actualizarCarrito()
         console.log(carrito)
     })
 })
