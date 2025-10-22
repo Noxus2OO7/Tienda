@@ -34,7 +34,7 @@ aside {
 }
 
 
-.item{
+.barra{
     background-color: rgba(255, 232, 103, 0.523);
     height: 75%;
     width: 100%;
@@ -52,18 +52,16 @@ aside {
 }
 
 #comprar:hover {
-    background-color: rgb(186, 253, 71);
+    background-color: rgba(255, 236, 63, 0.637);
 }
 
 .boton{
     background-color: rgb(189, 160, 31);
     border: none;
-    padding: 5%;
     border-radius: 10px;
     transition: 0.3s;
-    width: 10vh;
-    height:0vh;
-    padding-top: 10px;
+    padding: 7px;
+    margin-left: 15px;
 }
 
 .Div{
@@ -72,4 +70,12 @@ aside {
     padding-bottom: 5px;
     margin-left: 10px;
     padding-left: 10px;
+}
+
+.item{
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    align-items: center;
+
 }
